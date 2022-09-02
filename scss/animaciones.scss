@@ -1,0 +1,43 @@
+.productoAnim {
+    animation-name: productos;
+    animation-duration: 3s;
+}
+
+@keyframes productos {
+    from  {
+       transform: translateX(1000px)
+    }
+    to {
+       transform: translateX(0px);
+    }
+}
+
+.categoriaAnim {
+    animation-name: categoria;
+    animation-duration: 3s;
+}
+
+@keyframes categoria {
+    from  {
+       transform: translateX(-1000px)
+    }
+    to {
+       transform: translateX(0px);
+    }
+}
+
+li:hover {
+    background-color: #28242659;
+    border-left: solid 10px #E5A060
+    }
+
+    /* TRANSICION CATEGORIAS LATERAL */
+.liTransicion {
+    transition: width 5s height 5s;
+    background-image: linear-gradient(to left, #BBB6B6, #282426 60%);
+}
+
+.liTransicion:hover {
+    width: 70%;
+}
+
